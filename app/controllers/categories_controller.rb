@@ -21,7 +21,7 @@ class CategoriesController < ApplicationController
       flash[:success] = "You created #{@category.title}!"
       redirect_to category_path(@category)
     else
-      flash[:error] = "Category must be unique."
+      flash[:error] = "Sorry, that category already exists!"
       redirect_to new_category_path
     end
   end
