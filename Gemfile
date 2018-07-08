@@ -39,7 +39,8 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'selenium-webdriver'
   gem 'shoulda-matchers'
-  gem 'active-designer'
+  gem 'active_designer'
+  gem 'database_cleaner'
 end
 
 group :development do
