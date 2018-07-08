@@ -17,6 +17,7 @@ class JobsController < ApplicationController
       flash[:success] = "You created #{@job.title} at #{@company.name}"
       redirect_to company_job_path(@company, @job)
     else
+      flash[:error] = "There's a problem with saving the job!"
       render :new
     end
   end
@@ -54,6 +55,6 @@ class JobsController < ApplicationController
   private
 
   def job_params
-    params.require(:job).permit(:title, :description, :level_of_interest, :city)
+    params.require(:job).permit(:title, :description, :level_of_interest, :city, :category_id)
   end
 end
