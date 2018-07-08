@@ -44,6 +44,9 @@ group :development, :test do
   gem 'shoulda-matchers'
   gem 'simplecov'
 
+  gem 'active_designer'
+  gem 'database_cleaner'
+  gem 'launchy'
 end
 
 group :development do
