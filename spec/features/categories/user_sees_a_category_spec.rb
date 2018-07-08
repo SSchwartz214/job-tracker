@@ -2,6 +2,7 @@ require 'spec_helper'
 
 describe 'user visits a category show page' do
   it "sees all jobs associated with a category" do
+    company = Company.create(name: 'Best Place Ever')
     category = Category.create(title: "BAZ")
     job1 = category.jobs.create(title: 'Foo', level_of_interest: '5', city: 'New Jack City')
     job2 = category.jobs.create(title: 'Baz', level_of_interest: '4', city: 'New Jack City')
