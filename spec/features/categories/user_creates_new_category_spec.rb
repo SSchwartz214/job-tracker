@@ -3,7 +3,7 @@ require 'rails_helper'
 describe "user visits /categories/new" do
   context "fills out a form" do
     it "creates a new category" do
-      visit new_category_path
+      visit(new_category_path)
 
       fill_in "category[title]",	with: "Web Development"
       click_on "Create Category"
