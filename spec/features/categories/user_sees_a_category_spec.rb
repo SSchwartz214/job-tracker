@@ -8,7 +8,7 @@ describe 'user visits a category show page' do
     job2 = company.jobs.create(title: 'Baz', level_of_interest: '4', city: 'New Jack City', category_id: category.id)
 
     visit category_path(category.id)
-save_and_open_page
+
     expect(page).to have_content(job1.title)
     expect(page).to have_content(job1.level_of_interest)
     expect(page).to have_content(job1.city)
