@@ -1,3 +1,3 @@
 class Category < ApplicationRecord
-  validates_presence_of :title, on: :create, message: "can't be blank"
+  validates :title, presence: true, uniqueness: true
 end
