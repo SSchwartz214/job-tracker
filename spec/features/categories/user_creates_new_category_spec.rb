@@ -8,7 +8,7 @@ describe "user visits /categories/new" do
       fill_in "category[title]",	with: "Web Development"
       click_on "Create Category"
 
-      expect(current_path).to eq(category_path(:id))
+      expect(current_path).to eq("/categories/#{Category.all.first.id}")
       expect(page).to have_content("Web Development")
     end
   end
