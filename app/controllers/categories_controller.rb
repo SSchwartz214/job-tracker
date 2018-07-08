@@ -6,6 +6,7 @@ class CategoriesController < ApplicationController
   end
 
   def show
+    @jobs = @category.jobs.all
   end
 
   def new
