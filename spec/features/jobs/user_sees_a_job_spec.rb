@@ -32,7 +32,7 @@ end
       fill_in "comment[body]", with: "Sweet job"
       click_on "Submit"
 
-      expect(curent_path).to eq(company_job_path(company, job))
+      expect(current_path).to eq(company_job_path(company, job))
       expect(page).to have_content("Post a Comment")
       expect(page).to have_content("Me")
       expect(page).to have_content("Sweet job")
