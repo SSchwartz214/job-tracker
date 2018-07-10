@@ -5,11 +5,18 @@ describe "User sees a specific job" do
     company = Company.create!(name: "ESPN")
     category = Category.create(title: "Baz")
     job = company.jobs.create!(title: "Developer", level_of_interest: 70, city: "Denver", category_id: category.id)
+    comment_1 = job.comments.create(author_name: "Lebron James", body: "I don't need a job")
+    comment_2 = job.comments.create(author_name: "Darth Vader", body: "Still hiring?")
 
     visit company_job_path(company, job)
 
     expect(page).to have_content("ESPN")
     expect(page).to have_content("Developer")
     expect(page).to have_content("70")
+    expect(page).to have_content(comment_1.author_name)
+    expect(page).to have_content(comment_1.body)
+    expect(page).to have_content(comment_2.author_name)
+    expect(page).to have_content(comment_2.body)
+
   end
 end
