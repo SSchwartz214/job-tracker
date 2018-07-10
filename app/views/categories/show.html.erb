@@ -6,13 +6,15 @@
 </p>
 
 <h6>Jobs:</h6>
-<ul>
+<div class="card" style="width: 18rem;">
   <% @jobs.each do |job| %>
-    <li><%= job.title %></li>
-    <li>Level of interest: <%= job.level_of_interest %></li>
-    <li>Level of interest: <%= job.city %></li>
+    <div class="card-body">
+      <h5 class="card-title"><%= job.title %></h5>
+      <p class="card-text">Level of interest: <%= job.level_of_interest %></p>
+      <p class="card-text">City: <%= job.city %></p>
+      <div class="btn btn-primary">
+        <%= link_to 'Edit', edit_category_path(@category), :class => "btn" %> |
+        <%= link_to 'Back', categories_path, :class => "btn" %>
+    </div>
   <% end %>
-</ul>
-
-<%= link_to 'Edit', edit_category_path(@category) %> |
-<%= link_to 'Back', categories_path %>
+</div>
