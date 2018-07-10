@@ -10,7 +10,7 @@ describe "user visits company show" do
     contact_position = "Queen"
     email = "Rue@company.com"
 
-    visit company_job_path(company)
+    visit company_path(company)
 
     fill_in :company_contact_name,	with: contact_name 
     fill_in :company_contact_position,	with: contact_position

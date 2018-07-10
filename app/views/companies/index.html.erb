@@ -1,4 +1,4 @@
-<h3>All Companies</h3>
+<h1>All Companies</h1>
 
 <ul>
   <% @companies.each do |company| %>
@@ -9,3 +9,13 @@
   </li>
   <% end %>
 </ul>
+
+<h2>Add Company Contact</h2>
+
+  <%= form_for @contacts do |f| %>
+  <%= f.text_field :name %>
+  <%= f.text_field :position %>
+  <%= f.text_field :email %>
+
+  <%= f.submit %>
+  <% end %>
