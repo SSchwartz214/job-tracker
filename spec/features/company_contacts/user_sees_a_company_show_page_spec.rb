@@ -17,7 +17,7 @@ save_and_open_page
     fill_in :email,	with: email
     click_on "Create Job Contact"
 
-    expect(path).to eq(company_job_path(company))
+    expect(path).to eq(company_path(company))
     expect(page).to have_content(contact_name)
     expect(page).to have_content(contact_position)
     expect(page).to have_content(email)

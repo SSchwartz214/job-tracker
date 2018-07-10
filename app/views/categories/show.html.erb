@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <div class="jumbotron">
-<h1 class="display-4">Title: <%= @category.title %></h1>
+<h1 class="display-4"><%= @category.title %></h1>
 </div>
 
 <h2 class="h2 text-center">Jobs</h2>
@@ -14,7 +14,7 @@
           <p class="card-sub-title">Level of interest: <%= job.level_of_interest %></p>
           <p class="card-text">City: <%= job.city %></p>
           <%= link_to 'Back', categories_path, :class => "btn btn-secondary active" %> |
-          <%= link_to 'Edit', edit_category_path(@category), :class => "btn btn-primary active" %>
+          <%= link_to 'Edit', edit_category_path(@category), :class => "btn btn-warning active" %>
         </div>
       </div>
     </div>
