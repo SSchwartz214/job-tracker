@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
   resources :categories
   resources :companies do
-    resources :jobs, except: [:new, :create]
+    resources :jobs
     resources :contacts, only: [:create]
   end
-  resources :jobs, only: [:new, :create, :index]
+  resources :jobs
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
