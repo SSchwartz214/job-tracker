@@ -11,7 +11,7 @@ describe "user visits company show" do
     email = "Rue@company.com"
 
     visit company_path(company)
-
+save_and_open_page
     fill_in :name,	with: contact_name 
     fill_in :position,	with: contact_position
     fill_in :email,	with: email
