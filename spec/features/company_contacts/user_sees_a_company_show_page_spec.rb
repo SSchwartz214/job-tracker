@@ -12,9 +12,9 @@ describe "user visits company show" do
 
     visit company_path(company)
 
-    fill_in :company_contact_name,	with: contact_name 
-    fill_in :company_contact_position,	with: contact_position
-    fill_in :company_contact_email,	with: email
+    fill_in :name,	with: contact_name 
+    fill_in :position,	with: contact_position
+    fill_in :email,	with: email
     click_on "Create Job Contact"
 
     expect(path).to eq(company_job_path(company))
