@@ -6,7 +6,7 @@ All Jobs for <h1><strong><%= @company.name %></strong></h1>
 
 <h2>Add Company Contact</h2>
 
-<%= form_for [@company, @contacts] do |f| %>
+<%= form_for [@company, @contact] do |f| %>
 <%= f.text_field :name %>
 <%= f.text_field :position %>
 <%= f.text_field :email %>
