@@ -12,7 +12,7 @@ describe "user visits company show" do
 
     visit company_path(company)
 save_and_open_page
-    fill_in :name,	with: contact_name 
+    fill_in :name,	with: contact_name
     fill_in :position,	with: contact_position
     fill_in :email,	with: email
     click_on "Create Job Contact"
