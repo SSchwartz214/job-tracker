@@ -1,18 +1,22 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @category.title %>
-</p>
+<div class="jumbotron">
+<h1 class="display-4"><%= @category.title %></h1>
+</div>
 
-<h6>Jobs:</h6>
-<ul>
+<h2 class="h2 text-center">Jobs</h2>
+<div class="row">
   <% @jobs.each do |job| %>
-    <li><%= job.title %></li>
-    <li>Level of interest: <%= job.level_of_interest %></li>
-    <li>Level of interest: <%= job.city %></li>
+    <div class="card-group">
+      <div class="card border-primary m-3" style="width: 12rem;">
+        <div class="card-body">
+          <h5 class="card-title text-primary"><%= job.title %></h5>
+          <p class="card-sub-title">Level of interest: <%= job.level_of_interest %></p>
+          <p class="card-text">City: <%= job.city %></p>
+          <%= link_to 'Back', categories_path, :class => "btn btn-secondary active" %> |
+          <%= link_to 'Edit', edit_category_path(@category), :class => "btn btn-warning active" %>
+        </div>
+      </div>
+    </div>
   <% end %>
-</ul>
-
-<%= link_to 'Edit', edit_category_path(@category) %> |
-<%= link_to 'Back', categories_path %>
+</div>

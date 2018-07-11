@@ -1,21 +1,18 @@
 class JobsController < ApplicationController
 
   def index
-    @company = Company.find(params[:company_id])
-    @jobs = @company.jobs
+    @jobs = Job.all
   end
 
   def new
-    @company = Company.find(params[:company_id])
     @job = Job.new()
   end
 
   def create
-    @company = Company.find(params[:company_id])
-    @job = @company.jobs.new(job_params)
+    @job = Job.new(job_params)
     if @job.save
-      flash[:success] = "You created #{@job.title} at #{@company.name}"
-      redirect_to company_job_path(@company, @job)
+      flash[:success] = "You created #{@job.title}"
+      redirect_to job_path(@job)
     else
       flash[:error] = "There's a problem with saving the job!"
       render :new
@@ -58,6 +55,6 @@ class JobsController < ApplicationController
   private
 
   def job_params
-    params.require(:job).permit(:title, :description, :level_of_interest, :city, :category_id)
+    params.require(:job).permit(:title, :description, :level_of_interest, :city, :category_id, :company_id)
   end
 end
