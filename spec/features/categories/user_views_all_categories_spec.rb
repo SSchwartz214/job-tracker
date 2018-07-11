@@ -15,5 +15,3 @@ describe "user visits categories index" do
     expect(page).to have_link(category_4.title)
   end
 end
-
-#  The user can view a list of all Categories on a single page, and each Category can be deleted from that page. There is also a link to “Edit” each Category, which takes the user to a form where they can update the Category.

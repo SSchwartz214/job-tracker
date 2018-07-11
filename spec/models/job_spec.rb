@@ -51,6 +51,7 @@ describe Job do
 
       expect(Job.level_of_interest).to eq(expected)
     end
+    
     it '.top_three' do
     company1 = Company.create(name: "hahaha")
     company2 = Company.create(name: "company2")
