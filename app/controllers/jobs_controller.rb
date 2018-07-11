@@ -67,6 +67,9 @@ class JobsController < ApplicationController
     elsif
       params[:sort] == "interest"
       @jobs = Job.order(level_of_interest: :desc)
+    elsif
+      params[:location]
+      @jobs = Job.where(city: params[:location])
     end
   end
 end
