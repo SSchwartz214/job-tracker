@@ -66,8 +66,9 @@ describe Job do
     expected1 = "35"
     expected2 = "55"
     expected3 = "75"
+    ordered_method_output = [["company3", 0.75e2], ["company2", 0.55e2], ["hahaha", 0.35e2]]
 
-    expect(Job.top_three).to eq([company3.name, expected3])
+    expect(Job.top_three).to eq(ordered_method_output)
     end
   end
 end

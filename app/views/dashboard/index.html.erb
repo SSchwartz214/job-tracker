@@ -1,8 +1,13 @@
 <h1>JobTracker</h1>
+<div>
 <% @level_of_interest.each do |k, v| %>
   Level of Interest: <%= k %> (<%= v %>)jobs
   <% end %>
+</div>
 
+<h3>Top 3 Companies by average</h3>
+<div>
   <% @top_three.each do |top_three| %>
-    <%= top_three %>
+    <p><%= top_three[0] %> <%= top_three[1] %></p>
   <% end %>
+  </div>

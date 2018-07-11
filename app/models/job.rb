@@ -11,6 +11,6 @@ class Job < ApplicationRecord
   end
 
   def self.top_three
-    
+    joins(:company).group(:name).order("average_level_of_interest DESC").average(:level_of_interest).take(3)
   end
 end

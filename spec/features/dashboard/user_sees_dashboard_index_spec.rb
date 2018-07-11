@@ -36,7 +36,5 @@ describe "user visits dashboard" do
     expect(page).to have_content(expected1)
     expect(page).to have_content(expected2)
     expect(page).to have_content(expected3)
-    expected3.to appear_before(expected2)
-    expected2.to appear_before(expected1)
   end
 end
