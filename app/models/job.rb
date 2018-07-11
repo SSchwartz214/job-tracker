@@ -9,4 +9,8 @@ class Job < ApplicationRecord
     .order(level_of_interest: :desc)
     .count
   end
+
+  def self.top_three
+    
+  end
 end

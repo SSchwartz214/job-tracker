@@ -14,14 +14,14 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-07-11T09:23:31-06:00">2018-07-11T09:23:31-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-07-11T09:30:29-06:00">2018-07-11T09:30:29-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">93.72%</span></span>
+    (<span class="covered_percent"><span class="green">93.95%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
@@ -32,8 +32,8 @@
   <a name="AllFiles"></a>
   <div>
     <b>33</b> files in total.
-    <b>430</b> relevant lines. 
-    <span class="green"><b>403</b> lines covered</span> and
+    <b>446</b> relevant lines. 
+    <span class="green"><b>419</b> lines covered</span> and
     <span class="red"><b>27</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -173,9 +173,9 @@
       <tr>
         <td class="strong"><a href="#777fd678c647f4a28b882c295dc89a2a908ce991" class="src_link" title="app/models/job.rb">app/models/job.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>12</td>
-        <td>7</td>
-        <td>7</td>
+        <td>16</td>
+        <td>8</td>
+        <td>8</td>
         <td>0</td>
         <td>1.3</td>
       </tr>
@@ -363,9 +363,9 @@
       <tr>
         <td class="strong"><a href="#9c4436437706c45bb14316d01bd69c8438e235e5" class="src_link" title="spec/models/job_spec.rb">spec/models/job_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>55</td>
-        <td>33</td>
-        <td>33</td>
+        <td>73</td>
+        <td>48</td>
+        <td>48</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -2105,8 +2105,8 @@
     <h3>app/models/job.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>7</b> relevant lines. 
-      <span class="green"><b>7</b> lines covered</span> and
+      <b>8</b> relevant lines. 
+      <span class="green"><b>8</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -2181,6 +2181,30 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def self.top_three</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">    </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
           
           
           <code class="ruby">end</code>
@@ -4668,8 +4692,8 @@
     <h3>spec/models/job_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>33</b> relevant lines. 
-      <span class="green"><b>33</b> lines covered</span> and
+      <b>48</b> relevant lines. 
+      <span class="green"><b>48</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -4995,13 +5019,121 @@
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="54">
+        <li class="covered" data-hits="1" data-linenumber="54">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &#39;.top_three&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="55">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    company1 = Company.create(name: &quot;hahaha&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="56">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    company2 = Company.create(name: &quot;company2&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="57">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    company3 = Company.create(name: &quot;company3&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="58">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    category = Category.create(title: &quot;the best&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="59">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    Job.create!(title: &quot;foo1&quot;, description: &quot;bar&quot;, level_of_interest: 30, city: &quot;NY&quot;, company_id: company1.id, category_id: category.id)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="60">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    Job.create!(title: &quot;baz1&quot;, description: &quot;bar&quot;, level_of_interest: 40, city: &quot;LA&quot;, company_id: company1.id, category_id: category.id)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="61">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    Job.create!(title: &quot;foo2&quot;, description: &quot;bar&quot;, level_of_interest: 50, city: &quot;NY&quot;, company_id: company2.id, category_id: category.id)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="62">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    Job.create!(title: &quot;baz2&quot;, description: &quot;bar&quot;, level_of_interest: 60, city: &quot;LA&quot;, company_id: company2.id, category_id: category.id)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="63">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    Job.create!(title: &quot;foo3&quot;, description: &quot;bar&quot;, level_of_interest: 70, city: &quot;NY&quot;, company_id: company3.id, category_id: category.id)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="64">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    Job.create!(title: &quot;baz3&quot;, description: &quot;bar&quot;, level_of_interest: 80, city: &quot;LA&quot;, company_id: company3.id, category_id: category.id)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="65">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="66">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expected1 = &quot;35&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="67">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expected2 = &quot;55&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="68">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expected3 = &quot;75&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="69">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="70">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(Job.top_three).to eq([company3.name, expected3])</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="71">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="72">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="55">
+        <li class="never" data-hits="" data-linenumber="73">
           
           
           <code class="ruby">end</code>
