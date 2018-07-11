@@ -17,4 +17,10 @@ class Job < ApplicationRecord
     average(:level_of_interest).
     take(3)
   end
+
+  def self.jobs_by_location
+    group(:city).
+    order("count_id DESC").
+    count(:id)
+  end
 end
