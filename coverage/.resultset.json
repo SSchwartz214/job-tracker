@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/sethsmacbookpro/turing/2module/projects/job-tracker/spec/features/categories/user_sees_a_category_spec.rb": [
+      "/Users/eliotswank/turing/mod2-redux/projects/job-tracker/spec/features/categories/user_sees_a_category_spec.rb": [
         1,
         null,
         1,
@@ -22,7 +22,7 @@
         null,
         null
       ],
-      "/Users/sethsmacbookpro/turing/2module/projects/job-tracker/spec/features/categories/user_views_all_categories_spec.rb": [
+      "/Users/eliotswank/turing/mod2-redux/projects/job-tracker/spec/features/categories/user_views_all_categories_spec.rb": [
         1,
         null,
         1,
@@ -43,7 +43,7 @@
         null,
         null
       ],
-      "/Users/sethsmacbookpro/turing/2module/projects/job-tracker/spec/features/companies/user_creates_new_company_spec.rb": [
+      "/Users/eliotswank/turing/mod2-redux/projects/job-tracker/spec/features/companies/user_creates_new_company_spec.rb": [
         1,
         null,
         1,
@@ -59,7 +59,7 @@
         null,
         null
       ],
-      "/Users/sethsmacbookpro/turing/2module/projects/job-tracker/spec/features/companies/user_deletes_a_company_spec.rb": [
+      "/Users/eliotswank/turing/mod2-redux/projects/job-tracker/spec/features/companies/user_deletes_a_company_spec.rb": [
         1,
         null,
         1,
@@ -75,7 +75,7 @@
         null,
         null
       ],
-      "/Users/sethsmacbookpro/turing/2module/projects/job-tracker/spec/features/companies/user_edits_existing_company_spec.rb": [
+      "/Users/eliotswank/turing/mod2-redux/projects/job-tracker/spec/features/companies/user_edits_existing_company_spec.rb": [
         1,
         null,
         1,
@@ -92,7 +92,7 @@
         null,
         null
       ],
-      "/Users/sethsmacbookpro/turing/2module/projects/job-tracker/spec/features/companies/user_sees_all_companies_spec.rb": [
+      "/Users/eliotswank/turing/mod2-redux/projects/job-tracker/spec/features/companies/user_sees_all_companies_spec.rb": [
         1,
         null,
         1,
@@ -107,7 +107,7 @@
         null,
         null
       ],
-      "/Users/sethsmacbookpro/turing/2module/projects/job-tracker/spec/features/companies/user_sees_one_company_spec.rb": [
+      "/Users/eliotswank/turing/mod2-redux/projects/job-tracker/spec/features/companies/user_sees_one_company_spec.rb": [
         1,
         null,
         1,
@@ -124,7 +124,7 @@
         null,
         null
       ],
-      "/Users/sethsmacbookpro/turing/2module/projects/job-tracker/spec/features/company_contacts/user_sees_a_company_show_page_spec.rb": [
+      "/Users/eliotswank/turing/mod2-redux/projects/job-tracker/spec/features/company_contacts/user_sees_a_company_show_page_spec.rb": [
         1,
         null,
         1,
@@ -159,7 +159,49 @@
         null,
         null
       ],
-      "/Users/sethsmacbookpro/turing/2module/projects/job-tracker/spec/features/jobs/user_creates_new_job_spec.rb": [
+      "/Users/eliotswank/turing/mod2-redux/projects/job-tracker/spec/features/dashboard/user_sees_dashboard_index_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/eliotswank/turing/mod2-redux/projects/job-tracker/spec/features/jobs/user_creates_new_job_spec.rb": [
         1,
         null,
         1,
@@ -184,7 +226,7 @@
         null,
         null
       ],
-      "/Users/sethsmacbookpro/turing/2module/projects/job-tracker/spec/features/jobs/user_deletes_a_job_spec.rb": [
+      "/Users/eliotswank/turing/mod2-redux/projects/job-tracker/spec/features/jobs/user_deletes_a_job_spec.rb": [
         1,
         null,
         1,
@@ -201,7 +243,7 @@
         null,
         null
       ],
-      "/Users/sethsmacbookpro/turing/2module/projects/job-tracker/spec/features/jobs/user_edits_existing_job_spec.rb": [
+      "/Users/eliotswank/turing/mod2-redux/projects/job-tracker/spec/features/jobs/user_edits_existing_job_spec.rb": [
         1,
         null,
         1,
@@ -222,7 +264,7 @@
         null,
         null
       ],
-      "/Users/sethsmacbookpro/turing/2module/projects/job-tracker/spec/features/jobs/user_sees_a_job_spec.rb": [
+      "/Users/eliotswank/turing/mod2-redux/projects/job-tracker/spec/features/jobs/user_sees_a_job_spec.rb": [
         1,
         null,
         1,
@@ -264,7 +306,7 @@
         null,
         null
       ],
-      "/Users/sethsmacbookpro/turing/2module/projects/job-tracker/spec/features/jobs/user_sees_all_jobs_spec.rb": [
+      "/Users/eliotswank/turing/mod2-redux/projects/job-tracker/spec/features/jobs/user_sees_all_jobs_spec.rb": [
         1,
         null,
         1,
@@ -282,7 +324,7 @@
         null,
         null
       ],
-      "/Users/sethsmacbookpro/turing/2module/projects/job-tracker/spec/models/category_spec.rb": [
+      "/Users/eliotswank/turing/mod2-redux/projects/job-tracker/spec/models/category_spec.rb": [
         1,
         null,
         1,
@@ -292,30 +334,30 @@
         null,
         null
       ],
-      "/Users/sethsmacbookpro/turing/2module/projects/job-tracker/app/models/category.rb": [
+      "/Users/eliotswank/turing/mod2-redux/projects/job-tracker/app/models/category.rb": [
         1,
         1,
         1,
         null
       ],
-      "/Users/sethsmacbookpro/turing/2module/projects/job-tracker/app/models/application_record.rb": [
+      "/Users/eliotswank/turing/mod2-redux/projects/job-tracker/app/models/application_record.rb": [
         1,
         1,
         null
       ],
-      "/Users/sethsmacbookpro/turing/2module/projects/job-tracker/spec/models/comment_spec.rb": [
+      "/Users/eliotswank/turing/mod2-redux/projects/job-tracker/spec/models/comment_spec.rb": [
         1,
         null,
         1,
         2,
         null
       ],
-      "/Users/sethsmacbookpro/turing/2module/projects/job-tracker/app/models/comment.rb": [
+      "/Users/eliotswank/turing/mod2-redux/projects/job-tracker/app/models/comment.rb": [
         1,
         1,
         null
       ],
-      "/Users/sethsmacbookpro/turing/2module/projects/job-tracker/spec/models/company_spec.rb": [
+      "/Users/eliotswank/turing/mod2-redux/projects/job-tracker/spec/models/company_spec.rb": [
         1,
         null,
         1,
@@ -349,14 +391,14 @@
         null,
         null
       ],
-      "/Users/sethsmacbookpro/turing/2module/projects/job-tracker/app/models/company.rb": [
+      "/Users/eliotswank/turing/mod2-redux/projects/job-tracker/app/models/company.rb": [
         1,
         1,
         1,
         1,
         null
       ],
-      "/Users/sethsmacbookpro/turing/2module/projects/job-tracker/spec/models/contact_spec.rb": [
+      "/Users/eliotswank/turing/mod2-redux/projects/job-tracker/spec/models/contact_spec.rb": [
         1,
         null,
         1,
@@ -371,24 +413,13 @@
         null,
         null
       ],
-      "/Users/sethsmacbookpro/turing/2module/projects/job-tracker/app/models/contact.rb": [
+      "/Users/eliotswank/turing/mod2-redux/projects/job-tracker/app/models/contact.rb": [
         1,
         1,
         1,
         null
       ],
-      "/Users/sethsmacbookpro/turing/2module/projects/job-tracker/spec/models/dashboard_spec.rb": [
-        1,
-        null,
-        1,
-        null,
-        null
-      ],
-      "/Users/sethsmacbookpro/turing/2module/projects/job-tracker/app/models/dashboard.rb": [
-        1,
-        null
-      ],
-      "/Users/sethsmacbookpro/turing/2module/projects/job-tracker/spec/models/job_spec.rb": [
+      "/Users/eliotswank/turing/mod2-redux/projects/job-tracker/spec/models/job_spec.rb": [
         1,
         null,
         1,
@@ -430,34 +461,74 @@
         1,
         2,
         null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
         null
       ],
-      "/Users/sethsmacbookpro/turing/2module/projects/job-tracker/app/models/job.rb": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        null
-      ],
-      "/Users/sethsmacbookpro/turing/2module/projects/job-tracker/spec/requests/categories_spec.rb": [
-        1,
-        null,
+      "/Users/eliotswank/turing/mod2-redux/projects/job-tracker/app/models/job.rb": [
         1,
         1,
         1,
         1,
         1,
         null,
+        1,
+        null,
+        null,
+        3,
+        null,
+        null,
+        1,
+        3,
         null,
         null
       ],
-      "/Users/sethsmacbookpro/turing/2module/projects/job-tracker/app/controllers/jobs_controller.rb": [
+      "/Users/eliotswank/turing/mod2-redux/projects/job-tracker/spec/requests/categories_spec.rb": [
         1,
         null,
         1,
-        2,
-        2,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/eliotswank/turing/mod2-redux/projects/job-tracker/app/controllers/companies_controller.rb": [
+        1,
+        1,
+        3,
         null,
         null,
         1,
@@ -471,22 +542,20 @@
         1,
         null,
         0,
-        0,
         null,
         null,
         null,
         1,
-        5,
-        5,
-        5,
+        6,
+        6,
+        6,
         null,
-        null,
-        1,
-        1,
-        1,
         null,
         null,
         1,
+        1,
+        null,
+        null,
         1,
         1,
         1,
@@ -501,45 +570,33 @@
         1,
         1,
         1,
-        1,
         null,
         1,
         1,
+        null,
         null,
         null,
         1,
         null,
         1,
         2,
-        null,
-        null,
-        1,
-        2,
-        0,
-        null,
-        2,
-        0,
-        null,
         null,
         null
       ],
-      "/Users/sethsmacbookpro/turing/2module/projects/job-tracker/app/controllers/application_controller.rb": [
+      "/Users/eliotswank/turing/mod2-redux/projects/job-tracker/app/controllers/application_controller.rb": [
         1,
         null,
         null,
         1,
         null
       ],
-      "/Users/sethsmacbookpro/turing/2module/projects/job-tracker/app/controllers/comments_controller.rb": [
+      "/Users/eliotswank/turing/mod2-redux/projects/job-tracker/app/controllers/contacts_controller.rb": [
         1,
         null,
         1,
-        null,
         1,
         1,
-        null,
         1,
-        null,
         1,
         null,
         null,
@@ -550,7 +607,7 @@
         null,
         null
       ],
-      "/Users/sethsmacbookpro/turing/2module/projects/job-tracker/app/controllers/categories_controller.rb": [
+      "/Users/eliotswank/turing/mod2-redux/projects/job-tracker/app/controllers/categories_controller.rb": [
         1,
         1,
         null,
@@ -609,10 +666,12 @@
         null,
         null
       ],
-      "/Users/sethsmacbookpro/turing/2module/projects/job-tracker/app/controllers/companies_controller.rb": [
+      "/Users/eliotswank/turing/mod2-redux/projects/job-tracker/app/controllers/jobs_controller.rb": [
         1,
+        null,
         1,
-        3,
+        2,
+        2,
         null,
         null,
         1,
@@ -626,20 +685,22 @@
         1,
         null,
         0,
+        0,
         null,
         null,
         null,
         1,
-        6,
-        6,
-        6,
-        null,
+        5,
+        5,
+        5,
         null,
         null,
         1,
         1,
+        1,
         null,
         null,
+        1,
         1,
         1,
         1,
@@ -654,10 +715,10 @@
         1,
         1,
         1,
+        1,
         null,
         1,
         1,
-        null,
         null,
         null,
         1,
@@ -665,15 +726,36 @@
         1,
         2,
         null,
+        null,
+        1,
+        2,
+        0,
+        null,
+        2,
+        0,
+        null,
+        null,
         null
       ],
-      "/Users/sethsmacbookpro/turing/2module/projects/job-tracker/app/controllers/contacts_controller.rb": [
+      "/Users/eliotswank/turing/mod2-redux/projects/job-tracker/app/controllers/dashboard_controller.rb": [
+        1,
+        null,
+        1,
+        2,
+        2,
+        null,
+        null
+      ],
+      "/Users/eliotswank/turing/mod2-redux/projects/job-tracker/app/controllers/comments_controller.rb": [
+        1,
+        null,
         1,
         null,
         1,
         1,
+        null,
         1,
-        1,
+        null,
         1,
         null,
         null,
@@ -685,6 +767,6 @@
         null
       ]
     },
-    "timestamp": 1531271511
+    "timestamp": 1531323789
   }
 }

@@ -47,6 +47,7 @@ group :development, :test do
   gem 'active_designer'
   gem 'database_cleaner'
   gem 'launchy'
+  gem 'orderly'
 end
 
 group :development do

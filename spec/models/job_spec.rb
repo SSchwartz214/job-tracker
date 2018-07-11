@@ -51,5 +51,24 @@ describe Job do
 
       expect(Job.level_of_interest).to eq(expected)
     end
+    it '.top_three' do
+    company1 = Company.create(name: "hahaha")
+    company2 = Company.create(name: "company2")
+    company3 = Company.create(name: "company3")
+    category = Category.create(title: "the best")
+    Job.create!(title: "foo1", description: "bar", level_of_interest: 30, city: "NY", company_id: company1.id, category_id: category.id)
+    Job.create!(title: "baz1", description: "bar", level_of_interest: 40, city: "LA", company_id: company1.id, category_id: category.id)
+    Job.create!(title: "foo2", description: "bar", level_of_interest: 50, city: "NY", company_id: company2.id, category_id: category.id)
+    Job.create!(title: "baz2", description: "bar", level_of_interest: 60, city: "LA", company_id: company2.id, category_id: category.id)
+    Job.create!(title: "foo3", description: "bar", level_of_interest: 70, city: "NY", company_id: company3.id, category_id: category.id)
+    Job.create!(title: "baz3", description: "bar", level_of_interest: 80, city: "LA", company_id: company3.id, category_id: category.id)
+
+    expected1 = "35"
+    expected2 = "55"
+    expected3 = "75"
+    ordered_method_output = [["company3", 0.75e2], ["company2", 0.55e2], ["hahaha", 0.35e2]]
+
+    expect(Job.top_three).to eq(ordered_method_output)
+    end
   end
 end
