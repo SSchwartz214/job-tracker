@@ -1,12 +1,15 @@
-<h1>All Companies</h1>
+<p id="notice"><%= notice %></p>
 
+<div class="jumbotron">
+<h1>All Companies</h1>
+<hr class="my-4">
+</div>
 <ul>
   <% @companies.each do |company| %>
   <li class=company_<%= company.id %>>
-    <%= link_to company.name, company_path(company) %>: 
+    <%= link_to company.name, company_path(company) %>:
     <%= link_to "Edit", edit_company_path(company) %>
     <%= link_to "Delete", company_path(company), method: "delete" %>
   </li>
   <% end %>
 </ul>
-
