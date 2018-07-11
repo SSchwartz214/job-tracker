@@ -5,7 +5,7 @@ describe "User creates a new job" do
     company = Company.create!(name: "ESPN")
     Category.create!(title: 'Awesomeness')
     visit new_job_path
-    save_and_open_page
+
     select 'ESPN', from: 'job_company_id'
     fill_in "job[title]", with: "Developer"
     fill_in "job[description]", with: "So fun!"

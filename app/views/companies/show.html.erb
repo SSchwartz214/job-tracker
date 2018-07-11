@@ -7,9 +7,14 @@ All Jobs for <h1><strong><%= @company.name %></strong></h1>
 <h2>Add Company Contact</h2>
 
 <%= form_for [@company, @contact] do |f| %>
+<%= f.label :name %>
 <%= f.text_field :name %>
+
+<%= f.label :position %>
 <%= f.text_field :position %>
+
+<%= f.label :email %>
 <%= f.text_field :email %>
 
-<%= f.submit %>
+<%= f.submit%>
 <% end %>

@@ -3,24 +3,24 @@ require 'rails_helper'
 describe "user visits company show" do
   context "sees a form to enter a company contact" do
     it "fills out a form and creates a contact" do
-    company = Company.create!(name: "ESPN")
-    category = Category.create(title: "Baz")
-    job = company.jobs.create!(title: "Developer", level_of_interest: 70, city: "Denver", category_id: category.id)
-    contact_name = "Rue Paul"
-    contact_position = "Queen"
-    email = "Rue@company.com"
+      company = Company.create!(name: "ESPN")
+      category = Category.create(title: "Baz")
+      job = company.jobs.create!(title: "Developer", level_of_interest: 70, city: "Denver", category_id: category.id)
+      contact_name = "RuPaul"
+      contact_position = "Queen"
+      email = "Rue@company.com"
 
-    visit company_path(company)
+      visit company_path(company)
 
-    fill_in :name,	with: contact_name
-    fill_in :position,	with: contact_position
-    fill_in :email,	with: email
-    click_on "Create Job Contact"
+      fill_in :contact_name,	with: contact_name
+      fill_in :contact_position,	with: contact_position
+      fill_in :contact_email,	with: email
+      click_on "Create Contact"
 
-    expect(path).to eq(company_path(company))
-    expect(page).to have_content(contact_name)
-    expect(page).to have_content(contact_position)
-    expect(page).to have_content(email)
+      expect(current_path).to eq(company_path(company))
+      expect(page).to have_content(contact_name)
+      expect(page).to have_content(contact_position)
+      expect(page).to have_content(email)
     end
   end
 end
