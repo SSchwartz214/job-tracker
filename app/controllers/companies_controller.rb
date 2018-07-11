@@ -21,7 +21,6 @@ class CompaniesController < ApplicationController
     @company = Company.find(params[:id])
     @contact = @company.contacts.new
     @contacts = Contact.all
-    # redirect_to company_path(@company)
   end
 
   def edit
@@ -41,12 +40,14 @@ class CompaniesController < ApplicationController
 
   def destroy
     company = Company.find(params[:id])
-    company.destroy
-
-    flash[:success] = "#{company.name} was successfully deleted!"
-    redirect_to companies_path
+    if company.destroy
+      flash[:success] = "#{company.name} was successfully deleted!"
+      redirect_to companies_path
+    else
+      flash[:error] = "Something went wrong..."
+      render company_path(company)
+    end
   end
-
 
   private
 

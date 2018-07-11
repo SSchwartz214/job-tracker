@@ -11,6 +11,7 @@ describe "user visits /categories/new" do
       expect(current_path).to eq("/categories/#{Category.all.first.id}")
       expect(page).to have_content("Web Development")
     end
+    
     it "redirects to the new page if they try to create a duplicate category" do
       category = Category.create(title:"Web Development")
 

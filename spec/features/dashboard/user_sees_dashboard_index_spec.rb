@@ -12,6 +12,7 @@ describe "user visits dashboard" do
     expect(page).to have_content("Level of Interest: 70 (1)")
     expect(page).to have_content("Level of Interest: 50 (1)")
   end
+  
   it "sees the top three companies ranked by average level of interest along with their respective average level of interest" do
     company1 = Company.create(name: "hahaha")
     company2 = Company.create(name: "company2")

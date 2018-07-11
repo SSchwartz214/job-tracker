@@ -1,11 +1,11 @@
 class ContactsController < ApplicationController
 
-def create
-  @contact = Contact.new(contact_params)
-  @contact.company_id = params[:company_id]
-  @contact.save
-  redirect_to company_path(@contact.company)
-end
+  def create
+    @contact = Contact.new(contact_params)
+    @contact.company_id = params[:company_id]
+    @contact.save
+    redirect_to company_path(@contact.company)
+  end
 
   private
 
