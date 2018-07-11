@@ -18,3 +18,10 @@ All Jobs for <h1><strong><%= @company.name %></strong></h1>
 
 <%= f.submit%>
 <% end %>
+
+<h3>Contacts</h3>
+<% @contacts.each do |contact| %>
+  <%= contact.name %>
+  <%= contact.position %>
+  <%= contact.email %>
+<% end %>
