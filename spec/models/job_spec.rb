@@ -35,4 +35,8 @@ describe Job do
       expect(job).to respond_to(:company)
     end
   end
+
+  describe "relationships" do
+    it {should have_many(:comments)}
+  end 
 end
