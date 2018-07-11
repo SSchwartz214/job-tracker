@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe "user visits company show" do
   context "sees a form to enter a company contact" do
-    xit "fills out a form and creates a contact" do
+    it "fills out a form and creates a contact" do
     company = Company.create!(name: "ESPN")
     category = Category.create(title: "Baz")
     job = company.jobs.create!(title: "Developer", level_of_interest: 70, city: "Denver", category_id: category.id)
