@@ -14,14 +14,14 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-07-11T11:22:58-06:00">2018-07-11T11:22:58-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-07-11T11:38:53-06:00">2018-07-11T11:38:53-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">95.08%</span></span>
+    (<span class="covered_percent"><span class="green">94.81%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
@@ -32,9 +32,9 @@
   <a name="AllFiles"></a>
   <div>
     <b>32</b> files in total.
-    <b>447</b> relevant lines. 
-    <span class="green"><b>425</b> lines covered</span> and
-    <span class="red"><b>22</b> lines missed </span>
+    <b>462</b> relevant lines. 
+    <span class="green"><b>438</b> lines covered</span> and
+    <span class="red"><b>24</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -107,7 +107,7 @@
         <td>4</td>
         <td>4</td>
         <td>0</td>
-        <td>1.5</td>
+        <td>2.0</td>
       </tr>
       
       <tr>
@@ -177,7 +177,7 @@
         <td>9</td>
         <td>9</td>
         <td>0</td>
-        <td>1.4</td>
+        <td>1.7</td>
       </tr>
       
       <tr>
@@ -262,11 +262,11 @@
       
       <tr>
         <td class="strong"><a href="#1395a2efa3367cf613bb45a2eba248e71afef6d3" class="src_link" title="spec/features/dashboard/user_sees_dashboard_index_spec.rb">spec/features/dashboard/user_sees_dashboard_index_spec.rb</a></td>
-        <td class="green strong">100.0 %</td>
-        <td>41</td>
-        <td>31</td>
-        <td>31</td>
-        <td>0</td>
+        <td class="green strong">95.65 %</td>
+        <td>60</td>
+        <td>46</td>
+        <td>44</td>
+        <td>2</td>
         <td>1.0</td>
       </tr>
       
@@ -1395,14 +1395,14 @@
           <code class="ruby">  def index</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="4">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="4">
+          <span class="hits">3</span>
           
           <code class="ruby">    @level_of_interest = Job.level_of_interest</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="5">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="5">
+          <span class="hits">3</span>
           
           <code class="ruby">    @top_three = Job.top_three</code>
         </li>
@@ -2170,8 +2170,8 @@
           <code class="ruby">    order(level_of_interest: :desc).</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="10">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="4" data-linenumber="10">
+          <span class="hits">4</span>
           
           <code class="ruby">    count</code>
         </li>
@@ -2218,8 +2218,8 @@
           <code class="ruby">    average(:level_of_interest).</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="18">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="4" data-linenumber="18">
+          <span class="hits">4</span>
           
           <code class="ruby">    take(3)</code>
         </li>
@@ -3236,11 +3236,11 @@
         <div class="source_table" id="1395a2efa3367cf613bb45a2eba248e71afef6d3">
   <div class="header">
     <h3>spec/features/dashboard/user_sees_dashboard_index_spec.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
+    <h4><span class="green">95.65 %</span> covered</h4>
     <div>
-      <b>31</b> relevant lines. 
-      <span class="green"><b>31</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <b>46</b> relevant lines. 
+      <span class="green"><b>44</b> lines covered</span> and
+      <span class="red"><b>2</b> lines missed.</span>
     </div>
   </div>
   
@@ -3334,7 +3334,7 @@
         <li class="never" data-hits="" data-linenumber="15">
           
           
-          <code class="ruby">  </code>
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="16">
@@ -3488,6 +3488,120 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="41">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="42">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &#39;has a count of jobs by location&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="43">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    company1 = Company.create(name: &quot;hahaha&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="44">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    company2 = Company.create(name: &quot;company2&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="45">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    company3 = Company.create(name: &quot;company3&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="46">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    category = Category.create(title: &quot;the best&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="47">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    Job.create!(title: &quot;foo1&quot;, description: &quot;bar&quot;, level_of_interest: 30, city: &quot;NY&quot;, company_id: company1.id, category_id: category.id)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="48">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    Job.create!(title: &quot;baz1&quot;, description: &quot;bar&quot;, level_of_interest: 40, city: &quot;LA&quot;, company_id: company1.id, category_id: category.id)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="49">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    Job.create!(title: &quot;foo2&quot;, description: &quot;bar&quot;, level_of_interest: 50, city: &quot;NY&quot;, company_id: company2.id, category_id: category.id)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="50">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    Job.create!(title: &quot;baz2&quot;, description: &quot;bar&quot;, level_of_interest: 60, city: &quot;LA&quot;, company_id: company2.id, category_id: category.id)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="51">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    Job.create!(title: &quot;foo3&quot;, description: &quot;bar&quot;, level_of_interest: 70, city: &quot;NY&quot;, company_id: company3.id, category_id: category.id)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="52">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    Job.create!(title: &quot;baz3&quot;, description: &quot;bar&quot;, level_of_interest: 80, city: &quot;LA&quot;, company_id: company3.id, category_id: category.id)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="53">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="54">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    visit dashboard_index_path</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="55">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="56">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(page).to have_content(&quot;Jobs by Location&quot;)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="57">
+          
+          
+          <code class="ruby">    expect(page).to have_content(&quot;NY - 3&quot;)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="58">
+          
+          
+          <code class="ruby">    expect(page).to have_content(&quot;LA - 3&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="59">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="60">
           
           
           <code class="ruby">end</code>
