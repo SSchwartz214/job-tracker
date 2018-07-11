@@ -38,5 +38,18 @@ describe Job do
 
   describe "relationships" do
     it {should have_many(:comments)}
-  end 
+  end
+
+  describe "class methods" do
+    it ".level_of_interest" do
+      company = Company.create(name: "hahaha")
+      category = Category.create(title: "the best")
+      Job.create!(title: "foo", description: "bar", level_of_interest: 50, city: "NY", company_id: company.id, category_id: category.id)
+      Job.create!(title: "baz", description: "bar", level_of_interest: 70, city: "LA", company_id: company.id, category_id: category.id)
+
+      expected = {70 => 1, 50 => 1}
+
+      expect(Job.level_of_interest).to eq(expected)
+    end
+  end
 end
